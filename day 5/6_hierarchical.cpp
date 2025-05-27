@@ -19,8 +19,16 @@ class student:public person
 {
     int roll_num;
     public:
-    student(string name,int age,int roll_num):person(name,age),roll_num(roll_num)
-}
+    student(string name,int age,int roll_num):person(name,age),roll_num(roll_num){
+
+    }
+     void display_student()
+    {
+        cout<<"student details:"<<endl;
+        display_person();
+        cout<<"roll number:"<<roll_num<<endl;
+    }
+};
 class teacher :public person 
 {
     int salary;
